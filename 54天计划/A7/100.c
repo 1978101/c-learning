@@ -8,6 +8,7 @@ int main()
     if(x<1)
     {
         printf("请输入大于等于1的正整数");
+        return 0;
     }
     else if(x==1)
     {
@@ -15,18 +16,21 @@ int main()
     }
     for(int n=x;n<=y;n++)
     {
+        int isprime=1;
         for(int m=2;m<n;m++)
         {
             if(n%m==0)
             {
-                printf("\n");
-                continue;
-            }
-            else
-            {
-                printf("%d",n);
+                isprime=0;
+                break;
             }
         }
+        if(isprime==0)
+        {
+            printf("%d\n",n);
+        }
+        
     }
+    
     return 0;
 }
