@@ -25,12 +25,12 @@ int main()
                 break;
             }
         }
-        if(isprime==0)
+        if(isprime==1)
         {
-            printf("%d\n",n);
+            printf("%d ",n);
         }
         
     }
-    
+    printf("\n");
     return 0;
 }
