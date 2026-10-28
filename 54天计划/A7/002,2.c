@@ -24,21 +24,22 @@ int main()
         printf(" ");
     }
 // 到这里 n 是大于 2 的奇数，从 3 开始只试奇数
-for ( int n=x;n<=y;n++) 
-    { int isprime=1;
-        for(int m=3;m*m<=n;m+=2)
+for (int n=x;n<=y;n++) 
+{   
+    int isprime=1;
+    for(int m=3;m*m<=n;m+=2)
+    {
+        if(n%m==0)
         {
-            if(n%m==0)
-            {
-                isprime=0;
-                break;
-            }
-        }
-        if(isprime==1)
-        {
-            printf("%d ",n);
+            isprime=0;
+            break;
         }
     }
+    if(isprime==1)
+    {
+        printf("%d ",n);
+    }
+}
     
     printf("\n");
     return 0;
