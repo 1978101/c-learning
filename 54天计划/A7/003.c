@@ -3,7 +3,7 @@
 int main()
 {
     int x,y;
-    int count;
+    int count=0;
     printf("你想判断哪个范围里的素数？\n");
     printf("请输入（x-y):");
     scanf("%d-%d",&x,&y);
