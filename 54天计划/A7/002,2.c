@@ -15,16 +15,20 @@ int main()
     {            // 1、0、负数都不是素数
         printf(" ");
     } 
-    else if (x==2) 
+    if (x<=2&&y>=1) 
     {     // 2 是唯一的偶素数，单独照顾
-        printf("2");
+        printf("2 ");
     } 
-    else if (x%2==0) 
+    if(x<3)
+    {
+        x=3;
+    }
+    if (x%2==0) 
     { // 其他偶数一律不是
-        printf(" ");
+        x+=1;
     }
 // 到这里 n 是大于 2 的奇数，从 3 开始只试奇数
-for (int n=x;n<=y;n++) 
+for (int n=x;n<=y;n+=2) 
 {   
     int isprime=1;
     for(int m=3;m*m<=n;m+=2)
