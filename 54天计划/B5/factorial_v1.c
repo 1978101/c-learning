@@ -5,7 +5,7 @@ int main(void)
     int n=0;
     printf("几的阶乘？：");
     scanf("%d",&n);
-    int fact(n);
+    int fact(n);                //函数前面有类型的时候，C会把他当做申明，所以调用的时候不用写类型。
 }
 int fact(int n)
 {
