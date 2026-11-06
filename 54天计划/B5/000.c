@@ -16,3 +16,8 @@ int fact(int n)
     }
     return i;
 }
+//这是第一版，出现了警告，但是我自己找不出来。
+//D:\C\Learning outcomes\Դ��\54��ƻ�\B5\000.c: In function 'main':
+//D:\C\Learning outcomes\Դ��\54��ƻ�\B5\000.c:8:5: warning: parameter names (without types) in function declaration
+//     int fact(n);
+//     ^~~
