@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-    int n=1,s1,s;
+    int n=1,s1=0,s=0;
     printf("请输入：");
     scanf("%d",&n);
     for(n;n>0;n=n/10)
