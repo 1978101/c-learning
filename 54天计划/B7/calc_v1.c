@@ -19,6 +19,11 @@ int main(void)
             printf("没有这个选项！");
             continue;
         }
+        else if(choice==5)
+        {
+            printf("退出");
+            return 0;
+        }
         printf("请输入两个整数；");
         scanf("%d %d",&a,&b);
         switch(choice)
@@ -46,29 +51,30 @@ int main(void)
                     printf("除数不能为零");
                     continue;
                 }
-                printf("%d÷%d=%d",a,b,divide(a,b));
+                printf("%d÷%d=%d",a,b,i);
                 break;
-            }
-            case 5:
-            {
-                return 0;
             }
         }
     }
     while(1);
+    return 0;
 }
+
 int add(int a,int b)
 {
     return a+b;
 }
+
 int sub(int a,int b)
 {
     return a-b;
 }
+
 int mul(int a,int b)
 {
     return a*b;
 }
+
 int divide(int a,int b)
 {
     if(b==0)
